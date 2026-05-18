@@ -6,7 +6,7 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from pathlib import Path
 
-sys.path.append(str(Path(__file__).parent))
+sys.path.append(str(Path(__file__).parent.parent))
 
 from src.api.auth import router as auth_router
 
@@ -22,7 +22,7 @@ def home():
     <h1>Выберите тип документации</h1>
     <h2><a href="https://booking-fastapi-project.ru/docs">Swagger UI</a><br></h2>
     <h2><a href="https://booking-fastapi-project.ru/redoc">ReDoc</a></h2>
-    """
+#     """
 
 
 if __name__ == "__main__":
